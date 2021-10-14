@@ -1,0 +1,394 @@
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+    */
+
+    html, body, div, span, applet, object, iframe,
+    blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+    body {
+        line-height: 1;
+        box-sizing: border-box;
+    }
+    ol, ul {
+        list-style: none;
+    }
+    blockquote, q {
+        quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+
+
+
+
+
+@media(min-width: 600px) {
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        background-color:blue ;
+        padding: 10px;
+    }
+    
+    
+    nav .logo {
+        color: white;
+    }
+    
+    .menu ul {
+        display: flex;
+        margin: 20px;
+    }
+    
+     .menu ul li a {
+         text-decoration: none;
+         color: white;
+         margin: 10px;
+         font-size: 15px;
+     }
+    
+     main {
+         display: flex ;
+         justify-content: space-evenly;
+         padding: 30px;
+     }
+    
+     .image img {
+         width: 350px;
+         border-radius: 50%;
+     }
+    
+    
+     .content h1 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+         font-size: 40px;
+        
+     }
+    
+     .content p {
+         font-size: 20px;
+         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+     }
+    
+     .content .btn-started {
+         font-size: 20px;
+         margin: 15px;
+         padding: 10px;
+         background-color: blue;
+         font-family: fantasy;
+         border: 2px yellow solid;
+        color: white;
+        cursor: pointer;
+        border-radius: 20px;
+     }
+
+
+     .layanan h1 {
+         text-align: center;
+     }
+     
+
+    .layanan .card {
+     
+        text-align: center;
+        background-color: blue;
+        display: flex;
+        margin: 20px;
+        justify-content: space-between;
+        box-shadow: 12px 5px rgb(19, 19, 51);
+    }
+    .card-item {
+
+        width: 25%;
+        margin: 15px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+        color: white;   
+        
+        
+    }
+
+    .card-item p {
+        font-style: italic;
+     
+    }
+
+
+    .team h1 {
+        text-align: center;
+    }
+
+    .card-team {
+       
+        display: flex;
+        justify-content: center;
+        text-align: center;
+       width: 100%;
+    }
+
+     h1 {
+        font-size: 50px;
+    }
+    
+    .testimoni h1 {
+        text-align: center;
+    }
+    .testi {
+        display: flex;
+        justify-content:space-evenly;
+        padding: 20px;
+        margin: 20px;
+      
+    }
+
+    .testi img {
+        border-radius: 50%;
+        width: 30%;
+        height: 200px;
+    }
+
+    .testi-story h3 {
+        font-size: 30px;
+    }
+
+    .testi-story p {
+        font-style: italic;
+        font-size: 20px;
+    }
+
+    .testi-story p span {
+        font-weight: bold;
+    }
+
+    
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        background-color: blue;
+        color: white;
+        padding: 20px;
+        
+    }
+
+    .kontak-kami , .brand , .alamat {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .kontak-kami ul li {
+        margin-bottom: 10px;
+    }
+}
+
+   
+
+@media (max-width:600px) {
+    nav {
+        padding: 10px;
+        height: 100px;
+        background-color: blue;
+        box-shadow: 3px 2px rgb(164, 184, 194);
+    }
+
+    .logo h1 {
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        color: white;
+    }
+
+
+    .menu ul li{
+        margin : 5px;
+        
+    }
+
+    .menu ul li a {
+        text-decoration: none;
+        color: white;
+        margin: 20px 20px;
+    
+        border-bottom: 2px #fff solid;
+        
+
+    }
+
+    main {
+        min-height: 800px;
+        display: flex;
+        padding : 20px;
+        flex-direction: column;
+    }
+    .content h1 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 50px;
+        padding: 5px 20px;
+        text-transform: uppercase;
+    }
+
+    .content p {
+        font-size: 20px;
+        margin: 20px 20px;
+    }
+
+     .btn-started {
+        background-color: royalblue;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+        font-style: oblique;
+        font-weight: bold;
+        border: none;
+        margin: 20px;
+        padding: 20px;
+        cursor: pointer;
+        border-radius: 50px;
+        box-shadow: 4px 4px blue;
+
+    }
+
+
+    .image img {
+        width:80% ;
+        height: 300px;
+        margin :50px;
+        border-radius: 50%;
+        background-position: center;
+        background-size: cover;
+
+        
+    }
+
+
+.layanan h1 {
+font-size: 50px;
+ text-align: center;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.card .card-item {
+  background-color: blue;
+  margin: 15px;
+  padding: 10px;
+}
+
+.card-item h2{
+    text-align: center;
+    color: wheat;
+}
+
+.card-item p {
+    font-style: italic;
+    font-size: 15px;
+    color: wheat;
+}
+
+
+
+
+.team .team-name {
+font-size: 50px;
+text-align: center;
+}
+
+.card-team .card-profile {
+    display: flex;
+    margin: 10px 10px;
+    background-color:blue;
+    color: white;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px 10px;
+    justify-content: space-evenly;
+}
+
+
+ .foto img{
+    height: 100px;
+    border-radius: 50%;
+
+}
+
+.testimoni h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.testi {
+    display: flex;
+    flex-direction: column;
+}
+.testi img {
+    width: 100%;
+    height: 150px;
+    border-radius: 50%;
+    
+}
+
+.testi-story{
+text-align: center;
+font-size: 20px;
+}
+.testi-story span {
+    color:rgb(36, 36, 66);
+    font-weight: bold;
+}
+
+.testi-story p {
+    font-style: italic;
+}
+
+
+.footer {
+    background-color: blue;
+    padding : 10px 10px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.kontak-kami ul li{
+    margin: 10px 10px;
+}
+
+}
