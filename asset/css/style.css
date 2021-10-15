@@ -76,7 +76,7 @@ table {
    
     }
     
-    
+
     main {
         display: flex;
         flex-direction: column;
@@ -108,7 +108,7 @@ table {
     }
     
     .image img {
-        width: 40%;
+        width: 40% ;
         margin: 50px 50px;
         border-radius: 50%;
     }
@@ -129,15 +129,44 @@ table {
             font-style: italic;
             box-shadow: 2px 2px black;
         }
+
+        @keyframes ubahwarna {
+            0% {background-color: red;}
+            25% {background-color: yellow;}
+            50% {background-color: yellowgreen;}
+            75% {background-color: green;}
+        }
+
+        @keyframes ubahwarnadua {
+        
+          from {background-color: blueviolet;}
+          to {background-color: yellowgreen;}
+        }
+
+        @keyframes ubahwarnadua {
+          
+          from {background-color: chartreuse;}
+          to {background-color: yellow;}
+        }
+
         .card-satu {
             background-color: red;
+            animation-name: ubahwarna;
+            animation-duration: 5s;
+            animation-delay: 2s;
         }
         .card-dua {
         
             background-color: blueviolet;
+            animation-name: ubahwarna;
+            animation-duration: 5s;
+            animation-delay: 3s;
         }.card-tiga{
 
             background-color: chartreuse;
+            animation-name: ubahwarna;
+            animation-duration: 5s;
+            animation-delay: 3s;
         }
         
         .team {
@@ -284,6 +313,26 @@ table {
 
     }
 
+    @keyframes ubahwarna {
+        0% {background-color: red;}
+        25% {background-color: yellow;}
+        50% {background-color: yellowgreen;}
+        75% {background-color: green;}
+    }
+
+    @keyframes ubahwarnadua {
+    
+      from {background-color: blueviolet;}
+      to {background-color: yellowgreen;}
+    }
+
+    @keyframes ubahwarnatiga {
+      
+      from {background-color: chartreuse;}
+      to {background-color: green;}
+    }
+
+    
     .layanan {
         text-align: center;
         padding: 20px;
@@ -314,15 +363,24 @@ table {
     .card-satu {
         background-color: red;
         box-shadow:2px 2px rgb(41, 16, 16);
+        animation-name: ubahwarna;
+        animation-duration: 5s;
+        animation-delay: 3s;
     }
     .card-dua {
     
         background-color: blueviolet;
         box-shadow:2px 2px rgb(41, 16, 16);
+        animation-name: ubahwarnadua;
+        animation-duration: 5s;
+        animation-delay: 3s;
     }.card-tiga{
 
         background-color: chartreuse;
         box-shadow:2px 2px rgb(41, 16, 16);
+        animation-name: ubahwarnatiga;
+        animation-duration: 5s;
+        animation-delay: 3s
     }
     h1 {
         font-size: 50px;
