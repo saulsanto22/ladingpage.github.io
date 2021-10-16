@@ -42,6 +42,9 @@ table {
 	border-spacing: 0;
 }
 
+* {
+    font-family: 'Oswald', sans-serif;;
+}
 
 @media (max-width : 680px) {
     nav {
@@ -59,6 +62,7 @@ table {
     nav .logo {
         font-size: 25px;
         padding: 20px;
+        text-shadow: 2px 2px 8px #1d0d77;
    
     }
     nav span {
@@ -104,6 +108,7 @@ table {
         color: rgb(248, 248, 248);
         padding: 15px;
         border-radius:50px;
+        cursor: pointer;
         font-size: 20px;
     }
     
@@ -186,12 +191,21 @@ table {
 
     .testimoni {
         text-align: center;
+        margin-bottom: 30px ;
     }
 
     .testi img {
         width: 50%;
         border-radius: 50%;
 
+    }
+
+    .testi-story h3 {
+        font-size: 30px;
+    }
+
+    .testi-story p {
+        font-style: italic;
     }
 
     .footer {
@@ -204,13 +218,7 @@ table {
         margin-top: 20px;
     }
     
-    .testi-story h3 {
-        font-size: 30px;
-    }
-
-    .testi-story p {
-        font-style: italic;
-    }
+  
     .name span {
         font-weight: bold;
         font-size: 15px;
@@ -239,9 +247,9 @@ table {
     }
 
     nav .logo {
-        font-size: 25px;
-      
+        font-size: 25px;     
         letter-spacing: 2px;
+        text-shadow: 2px 2px 8px #1d0d77;
         
         
     }
@@ -266,6 +274,12 @@ table {
      
     }
 
+    ul li a:hover {
+        border-bottom: 2px rgb(34, 34, 51) solid;
+        font-size: 20px;
+        color: rgb(12, 12, 104);
+    }
+
     main {
         display: flex;
         padding: 40px;
@@ -278,16 +292,15 @@ table {
 
     }
 
-    main .content {
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-    }
     .content h1 {
-        font-size: 30px;
+        font-size: 50px;
+        
+
     }
     .content p {
         font-size: 20px;
         font-style: italic;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 
     button.btn-started {
@@ -348,6 +361,7 @@ table {
         padding: 5px;
         color: white;
         font-size: 15px;
+        font-style: italic;
         
     }
 
@@ -404,6 +418,7 @@ table {
     .testimoni {
         text-align: center;
         padding: 20px;
+        margin-bottom: 50px;
     }
 
     .testi {
